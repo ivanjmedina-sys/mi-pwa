@@ -1,0 +1,130 @@
+/* Fuente más amigable */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+body{
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #f0f7ff, #e8fff3);
+  color: #333;
+}
+
+/* Títulos */
+h1{
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+h2{
+  margin-top: 25px;
+  color: #444;
+}
+
+h3{
+  margin-top: 0;
+}
+
+/* Inputs y selects */
+input, select{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin: 5px 0;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Botones */
+button{
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+  margin-top: 5px;
+}
+
+button:hover{
+  transform: scale(1.05);
+  background: #43a047;
+}
+
+/* Botón eliminar */
+button:has(+ button), li button{
+  background: #ff5252;
+}
+
+li button{
+  margin-left: 10px;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* Grid matriz */
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Tarjetas cuadrantes */
+.grid div{
+  background: white;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Cuadrantes con borde completo */
+#hacer{
+  border: 3px solid #4CAF50; /* verde */
+}
+
+#programar{
+  border: 3px solid #FFC107; /* amarillo */
+}
+
+#delegar{
+  border: 3px solid #2196F3; /* azul */
+}
+
+#eliminar{
+  border: 3px solid #F44336; /* rojo */
+}
+.grid{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Línea vertical */
+.grid::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background: #d0d0d0;
+  transform: translateX(-50%);
+}
+
+/* Línea horizontal */
+.grid::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 3px;
+  background: #d0d0d0;
+  transform: translateY(-50%);
+}

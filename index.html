@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matriz de Prioridades</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<h1>Matriz de Prioridades</h1>
+
+<h2>Propósitos</h2>
+<select id="propositoSelect"></select>
+<button onclick="eliminarProposito()">Eliminar</button>
+
+<div>
+  <input id="nuevoProposito" placeholder="Nuevo propósito">
+  <button onclick="agregarProposito()">Agregar</button>
+</div>
+
+<hr>
+
+<div class="grid">
+  <div><h3>Hacer</h3><ul id="hacer"></ul></div>
+  <div><h3>Programar</h3><ul id="programar"></ul></div>
+  <div><h3>Delegar</h3><ul id="delegar"></ul></div>
+  <div><h3>Eliminar</h3><ul id="eliminar"></ul></div>
+</div>
+
+<hr>
+
+<h2>Agregar tarea</h2>
+<input id="nuevaTarea" placeholder="Nombre tarea">
+
+<select id="importancia">
+  <option>Importante</option>
+  <option>No importante</option>
+</select>
+
+<select id="urgencia">
+  <option>Urgente</option>
+  <option>No urgente</option>
+</select>
+
+<button onclick="agregarTarea()">Agregar tarea</button>
+
+<script src="app.js"></script>
+</body>
+</html>
