@@ -1,4 +1,4 @@
-const CACHE_NAME = "matriz-app-v1"; // 👉 Cambia este nombre cada vez que publiques cambios
+const CACHE_NAME = "matriz-app-v2"; // 👉 Cambia este nombre cada vez que publiques cambios
 
 const ASSETS = [
   "/",
