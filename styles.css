@@ -56,7 +56,7 @@ button:hover{
 
 /* Botón eliminar */
 button:has(+ button), li button{
-  background: #ff5252;
+  background: #d3d0d0;
 }
 
 li button{
